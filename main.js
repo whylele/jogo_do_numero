@@ -34,4 +34,33 @@ function verificarPalpite () {
         }
     }
 
+contagemPalpites++;
+campoPalpite.value = "";
+campoPalpite.focus();
+}
+
+envioPalpite.addEventListener('click', verificarPalpite);
+
+function finalizarJogo() {
+    campoPalpite.disabled = true;
+    envioPalpite.disabled = true;
+    botaoReiniciar = document.createElement('button');
+    document.body.appendChild(botaoReiniciar);
+    botaoReiniciar.addEventListener('click', reiniciarJogo);
+}
+
+
+function reiniciarJogo() {
+    contagemPalpites = 1;
+    const paragrafosReiniciar = document.querySelectorAll('.paragrafosResultado p');
+    for (const paragrafoReiniciar of paragrafosReiniciar) {
+        paragrafoReiniciar.textContent = "";
+ }
+ botaoReiniciar.parentNode.removeChild(botaoReiniciar);
+ campoPalpite.disabled = false;
+ envioPalpite.disabled = false;
+ campoPalpite.value = "";
+ campoPalpite.focus();
+ ultimoResultado.style.backgroundColor =  'white';
+ numeroAleatorio = Math.floor(Math.random() * 100) + 1;
 }
