@@ -4,7 +4,7 @@ const ultimoResultado = document.querySelector('.ultimoResultado');
 const baixoOuAlto = document.querySelector('.baixoOuAlto');
 const envioPalpite = document.querySelector('.envioPalpite');
 const campoPalpite = document.querySelector('.campoPalpite');
-let contagemPalpites = 1;
+let contagemPalpite = 1;
 let botaoReiniciar;
 
 function verificarPalpite () {
