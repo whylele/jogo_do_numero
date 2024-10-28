@@ -20,7 +20,7 @@ function verificarPalpite () {
         ultimoResultado.style.backgroundColor = "green";
         baixoOuAlto.textContent = "";
         finalizarJogo();
-    } else if (contagemPalpites ===10) {
+    } else if (contagemPalpite ===10) {
         ultimoResultado.textContent = "FIM DE JOGO!!!";
         baixoOuAlto.textContent = "";
         finalizarJogo();
@@ -34,7 +34,7 @@ function verificarPalpite () {
         }
     }
 
-contagemPalpites++;
+contagemPalpite++;
 campoPalpite.value = "";
 campoPalpite.focus();
 }
