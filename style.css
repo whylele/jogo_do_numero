@@ -1,6 +1,6 @@
 html {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(to right, #bb05a6 #be3cee);
+    background: linear-gradient(to right, #bb05a6, #be3cee);
     height: 100vh;
     display: flex;
     justify-content: center;
